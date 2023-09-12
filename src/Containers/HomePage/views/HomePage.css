@@ -1,0 +1,14 @@
+.home-page {
+  margin: 10% 10% 10% 10%;
+}
+
+.home-page h1 {
+  text-align: center;
+}
+
+.home-page input {
+  width: 100%;
+  height: 32px;
+  padding: 10px;
+  border-radius: 5px;
+}
