@@ -1,0 +1,12 @@
+.details-page {
+  margin: 10% 10% 10% 10%;
+}
+
+.details-page .question-area {
+  border-top: 1px solid grey;
+  border-bottom: 1px solid grey;
+}
+
+.details-page .answers-area p {
+  border-bottom: 1px solid gray;
+}

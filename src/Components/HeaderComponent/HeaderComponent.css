@@ -1,0 +1,18 @@
+.header .header-tag {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.header .header-tag button {
+  width: 75px;
+  height: 32px;
+  background-color: beige;
+}
+
+.header .header-tag button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: beige;
+}

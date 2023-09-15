@@ -5,7 +5,7 @@ import { HomepageContext } from "../HomePageView";
 import QuestionCard from "../../../Components/QuestionCard/QuestionCardComponent";
 
 const HomePageView = () => {
-  const { listOfQuestions } = useContext(HomepageContext);
+  const { listOfQuestions, navigateToDetails } = useContext(HomepageContext);
 
   return (
     <div className="home-page">
@@ -24,7 +24,8 @@ const HomePageView = () => {
               key={index}
               number={item.query_id}
               question={item.query_question}
-              answer={item.query_answer}
+              answer={item.query_description}
+              navigateToDetails={navigateToDetails}
             />
           );
         })}
