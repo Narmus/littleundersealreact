@@ -5,10 +5,12 @@ import "./QuestionCardComponent.css";
 const QuestionCard = ({ number, question, answer }) => {
   return (
     <Fragment>
-      <h3>
-        {number}. {question}
-      </h3>
-      <p>{answer}</p>
+      <div className="question-card">
+        <h3>
+          {number}. {question}
+        </h3>
+        <p>{answer}</p>
+      </div>
     </Fragment>
   );
 };
