@@ -1,0 +1,22 @@
+.layout .header-tag {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+}
+
+.layout .header-tag button {
+  width: 75px;
+  height: 32px;
+  background-color: beige;
+}
+
+.layout .header-tag button:hover {
+  cursor: pointer;
+  background-color: black;
+  color: beige;
+}
+
+.layout .copyright {
+  text-align: center;
+}

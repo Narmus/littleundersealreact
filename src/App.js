@@ -3,12 +3,14 @@ import "./App.css";
 
 //Components
 import HomePage from "./Containers/HomePage";
-import QuestionCard from "./Components/QuestionCard/QuestionCardComponent";
+import Layout from "./Components/LayoutComponent/LayoutComponent";
 
 function App() {
   return (
     <div className="App">
-      <HomePage />
+      <Layout>
+        <HomePage />
+      </Layout>
     </div>
   );
 }
