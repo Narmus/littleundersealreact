@@ -7,3 +7,7 @@ export const getQuestions = () => {
 export const getSpecificQuestion = (id) => {
   return AxiosCall.get(`query_get/${id}`);
 };
+
+export const getCommentsForAnswers = (idsOfAnswers) => {
+  return AxiosCall.get(`comments_get/${idsOfAnswers}`);
+};

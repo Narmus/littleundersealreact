@@ -1,8 +1,11 @@
 import React from "react";
 
-import { getSpecificQuestion } from "../../api/api";
+import { getSpecificQuestion, getCommentsForAnswers } from "../../api/api";
 
-import { getSpecificQueryAdapter } from "./DetailsPageAdapter";
+import {
+  getSpecificQueryAdapter,
+  getCommentsAdapter,
+} from "./DetailsPageAdapter";
 
 const getSpecificQueryModel = async (id) => {
   try {
@@ -15,4 +18,15 @@ const getSpecificQueryModel = async (id) => {
   }
 };
 
-export { getSpecificQueryModel };
+const getCommentsModel = async (idsOfAnswers) => {
+  try {
+    const response = await getCommentsForAnswers(idsOfAnswers);
+    const adapterResponse = getCommentsAdapter(response);
+    return adapterResponse;
+  } catch (error) {
+    console.log(error);
+    return;
+  }
+};
+
+export { getSpecificQueryModel, getCommentsModel };

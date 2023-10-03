@@ -18,7 +18,7 @@ const HomePageView = () => {
         />
       </div>
       <div className="questions-area">
-        {listOfQuestions.map((item, index) => {
+        {listOfQuestions?.map((item, index) => {
           return (
             <QuestionCard
               key={index}

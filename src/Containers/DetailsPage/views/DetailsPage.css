@@ -10,3 +10,8 @@
 .details-page .answers-area p {
   border-bottom: 1px solid gray;
 }
+
+.details-page .comments-line {
+  border-left: 1px solid grey;
+  margin-left: 50px;
+}
