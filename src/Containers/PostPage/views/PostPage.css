@@ -1,0 +1,30 @@
+.post-page {
+  margin: 10% 10% 10% 10%;
+}
+
+.post-page .question-box {
+  padding: 3px;
+  width: 100%;
+  height: 32px;
+  box-sizing: border-box;
+}
+
+.post-page .question-description-box {
+  padding: 3px;
+  margin-top: 10px;
+  width: 100%;
+  min-height: 350px;
+  box-sizing: border-box;
+}
+
+.post-page .post-area {
+  display: flex;
+  justify-content: end;
+}
+
+.post-page .question-post-btn {
+  padding: 2px;
+  width: 100px;
+  height: 50px;
+  align-self: flex-end;
+}
