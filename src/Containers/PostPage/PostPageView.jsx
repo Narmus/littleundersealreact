@@ -58,7 +58,6 @@ export const PostPageContextProvider = ({ children }) => {
   };
 
   useEffect(() => {
-    console.log("q id", questionToNavigateTo);
     questionToNavigateTo &&
       navigate(routeContents.DETAILS_PAGE, { state: questionToNavigateTo });
   }, [questionToNavigateTo]);
