@@ -2,6 +2,14 @@
   margin: 10% 10% 10% 10%;
 }
 
+.post-page input:focus {
+  outline: none;
+}
+
+.post-page textarea:focus {
+  outline: none;
+}
+
 .post-page .question-box {
   padding: 3px;
   width: 100%;
@@ -27,4 +35,13 @@
   width: 100px;
   height: 50px;
   align-self: flex-end;
+}
+
+.post-page .invalid {
+  border-color: red;
+}
+
+.post-page .invalid-warning{
+  font-size: x-small;
+  color: red;
 }

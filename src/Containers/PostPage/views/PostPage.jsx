@@ -1,9 +1,10 @@
-import React, { Fragment, useContext } from "react";
+import React, { useContext } from "react";
 import "./PostPage.css";
 import { PostPageContext } from "../PostPageView";
 
 const PostPageView = () => {
-  const { onInput, postQuestion } = useContext(PostPageContext);
+  const { onInput, postQuestion, queryValidation } =
+    useContext(PostPageContext);
 
   return (
     <div className="post-page">
@@ -15,15 +16,31 @@ const PostPageView = () => {
         <input
           name="query_question"
           placeholder="Type your question here..."
-          className="question-box"
+          className={
+            queryValidation.question ? "question-box" : "question-box invalid"
+          }
           onChange={onInput}
         ></input>
+        {!queryValidation.question && (
+          <span className="invalid-warning">
+            Question should be atleast 10 characters long...
+          </span>
+        )}
         <textarea
           name="query_description"
           placeholder="Description..."
-          className="question-description-box"
+          className={
+            queryValidation.description
+              ? "question-description-box"
+              : "question-description-box invalid"
+          }
           onChange={onInput}
         ></textarea>
+        {!queryValidation.description && (
+          <span className="invalid-warning">
+            Descripion should be atleast 10 characters long...
+          </span>
+        )}
         <div className="post-area">
           <button
             onClick={() => postQuestion()}
