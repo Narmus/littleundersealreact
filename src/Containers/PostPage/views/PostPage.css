@@ -19,7 +19,7 @@
 
 .post-page .post-area {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
 .post-page .question-post-btn {
