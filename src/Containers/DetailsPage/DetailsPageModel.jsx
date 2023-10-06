@@ -24,7 +24,7 @@ const getCommentsModel = async (idsOfAnswers) => {
     const adapterResponse = getCommentsAdapter(response);
     return adapterResponse;
   } catch (error) {
-    console.log(error);
+    console.error(error);
     return;
   }
 };
