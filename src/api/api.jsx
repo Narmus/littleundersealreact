@@ -11,3 +11,7 @@ export const getSpecificQuestion = (id) => {
 export const getCommentsForAnswers = (idsOfAnswers) => {
   return AxiosCall.get(`comments_get/${idsOfAnswers}`);
 };
+
+export const postQuery = (data) => {
+  return AxiosCall.post(`/query_add`, data);
+};

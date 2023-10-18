@@ -1,4 +1,5 @@
 {
   "HOME": "/",
-  "DETAILS_PAGE": "/details"
+  "DETAILS_PAGE": "/details",
+  "POST_PAGE":"/post"
 }

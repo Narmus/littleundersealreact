@@ -44,7 +44,7 @@ export const DetailsPageContextProvider = ({ children }) => {
 
   useEffect(() => {
     const answersWithComments = answers?.map((item) => {
-      const commentsOfAnswer = comments.filter((innerItem) => {
+      const commentsOfAnswer = comments?.filter((innerItem) => {
         return innerItem.answer_id === item.answer_id;
       });
       return { ...item, comments: commentsOfAnswer };

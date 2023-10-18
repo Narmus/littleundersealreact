@@ -7,8 +7,43 @@
 }
 
 .home-page input {
-  width: 100%;
+  width: 90%;
   height: 32px;
   padding: 10px;
+  border-radius: 5px;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+}
+
+.home-page .form-box {
+  display: flex;
+  justify-content: center;
+}
+
+.home-page .search-button {
+  width: 10%;
+  height: 32px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  text-align: center;
+  display: grid;
+  align-content: center;
+}
+
+.home-page .post-question {
+  display: flex;
+  justify-content: center;
+}
+
+.home-page .post-question button {
+  margin-top: 16px;
+  width: 30%;
+  cursor: pointer;
+  height: 32px;
+  display: grid;
+  align-content: center;
   border-radius: 5px;
 }
