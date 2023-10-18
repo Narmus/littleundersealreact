@@ -5,17 +5,28 @@ import { HomepageContext } from "../HomePageView";
 import QuestionCard from "../../../Components/QuestionCard/QuestionCardComponent";
 
 const HomePageView = () => {
-  const { listOfQuestions, navigateToDetails } = useContext(HomepageContext);
+  const { listOfQuestions, navigateToDetails, navigateToPostPage } = useContext(HomepageContext);
 
   return (
     <div className="home-page">
       <div className="search-area">
         <h1>littleunderseal</h1>
-        <input
-          className="search-bar"
-          type="search"
-          placeholder="Type in your Search"
-        />
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+          }}
+          className="form-box"
+        >
+          <input
+            className="search-bar"
+            type="search"
+            placeholder="Type in your Search"
+          />
+          <button className="search-button">Search</button>
+        </form>
+      </div>
+      <div className="post-question">
+        <button onClick={navigateToPostPage}>Post a new question</button>
       </div>
       <div className="questions-area">
         {listOfQuestions?.map((item, index) => {

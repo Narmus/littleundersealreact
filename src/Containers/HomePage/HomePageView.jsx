@@ -22,7 +22,15 @@ export const HomepageContextProvider = ({ children }) => {
     navigate(routeContents.DETAILS_PAGE, { state: id });
   };
 
-  const providerValue = { listOfQuestions, navigateToDetails };
+  const navigateToPostPage = () => {
+    navigate(routeContents.POST_PAGE);
+  };
+
+  const providerValue = {
+    listOfQuestions,
+    navigateToDetails,
+    navigateToPostPage,
+  };
 
   return (
     <HomepageContext.Provider value={providerValue}>
